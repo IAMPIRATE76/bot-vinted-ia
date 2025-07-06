@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: bot-vinted-ia
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python bot_vinted_ia.py
+    envVars:
+      - key: BOT_TOKEN
+        value: Ton_token_Telegram
+      - key: OPENAI_API_KEY
+        value: Ta_clé_OpenAI
